@@ -1,3 +1,5 @@
 target("cmilner")
 	add_files("*.c")
 	set_kind("binary")
+	add_deps("bdd")
+	set_default(false)

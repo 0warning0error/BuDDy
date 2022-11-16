@@ -16,6 +16,6 @@ configvar_check_cincludes("STDC_HEADERS",{"stdlib.h","stdarg.h","string.h","floa
 set_configdir("src/")
 add_cxflags("-fno-stack-protector","")
 add_configfiles("config.h.in")
-add_includedirs("src")
+add_includedirs("src",{public = true})
 includes({"src/xmake.lua","examples/xmake.lua"})
 

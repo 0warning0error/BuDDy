@@ -1,2 +1,6 @@
-add_deps("bdd")
-includes("*/xmake.lua")
+target("example")
+	add_deps("bdd")	
+	set_default(false)
+	includes("*/xmake.lua")
+	set_kind("phony")
+	add_deps("bdd")
